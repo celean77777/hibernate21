@@ -1,0 +1,25 @@
+postgres=# INSERT INTO buyers (name) VALUES
+postgres-# ('Alex'),
+postgres-# ('Bob'),
+postgres-# ('Bill'),
+postgres-# ('Max');
+
+postgres=# INSERT INTO products (title, cost) VALUES
+postgres-# ('Eraser', 25),
+postgres-# ('Pen', 130),
+postgres-# ('Pencil', 67),
+postgres-# ('Ruler', 134),
+postgres-# ('Clip', 12),
+postgres-# ('Stapler', 456),
+postgres-# ('Marker', 98);
+
+postgres=# INSERT INTO buyers_products (buyer_id, product_id) VALUES
+postgres-# (1, 1),
+postgres-# (1, 4),
+postgres-# (2, 3),
+postgres-# (3, 1),
+postgres-# (3, 7),
+postgres-# (3, 6),
+postgres-# (4, 4),
+postgres-# (4, 5),
+postgres-# (4, 1);
